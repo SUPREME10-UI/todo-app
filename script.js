@@ -111,4 +111,6 @@ function addTask() {
   setTimeout(() => {
     li.classList.remove("task-pop");
   }, 300);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
 }

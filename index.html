@@ -14,15 +14,20 @@
 
 </head>
 <body>
-  <div class="container">
-    <h1>My To-Do List</h1>
-    <div class="input-group">
-      <input type="text" id="taskInput" placeholder="Add a new task..." />
-      <button onclick="addTask()">Add</button>
+  <div class="wrapper">
+    <div class="container">
+      <h1>My To-Do List</h1>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
     </div>
-    <ul id="taskList"></ul>
-  </div>
 
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Ebenezer Adjei Adjetey. All rights reserved.</p>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

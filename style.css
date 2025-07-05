@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+button {
+  padding: 0.75rem 1rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #e8f5e9;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: #f0f0f0;
+}
+
+li button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.options-btn {
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 100;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.options-menu button {
+  display: block;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.options-menu button:hover {
+  background: #4caf50;
+  color: #fffcfc;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.task-pop {
+  animation: pop 1s ease-in-out;
+}

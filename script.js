@@ -113,4 +113,16 @@ function addTask() {
   }, 300);
 
     document.getElementById("year").textContent = new Date().getFullYear();
+
+const colors = ["#FF6F61", "#6B5B95", "#88B04B", "#F7CAC9", "#92A8D1", "#955251", "#B565A7"];
+
+function changeBackgroundColor() {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
 }
+
+// Change every 5 seconds
+setInterval(changeBackgroundColor, 5000);
+
+  }
+

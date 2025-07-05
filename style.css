@@ -11,6 +11,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  color: #333;
 }
 
 .wrapper {
@@ -177,3 +181,10 @@ li button {
 .footer p {
   margin: 0;
 }
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

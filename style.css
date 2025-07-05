@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
   color: #333;
@@ -31,7 +31,7 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin: auto 0;
 }
@@ -188,3 +188,106 @@ li button {
   100% { background-position: 0% 50%; }
 }
 
+.input-group select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+}
+
+.input-group select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #ccc;
+  color: white;
+  margin-right: 10px;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.priority-low {
+  background-color: #4caf50;
+}
+
+.priority-medium {
+  background-color: #ffa500;
+}
+
+.priority-high {
+  background-color: #f44336;
+}
+
+.priority-badge:hover {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.priority-high:hover,
+.priority-medium:hover,
+.priority-low:hover {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+
+.task.overdue {
+  border-left: 5px solid crimson;
+  background-color: #ffe6e6;
+}
+.due-date {
+  font-size: 0.8rem;
+  color:#4caf50;
+  margin-top: 5px;
+}
+.task .due-date {
+  margin-left: 10px;
+  color: #4caf50;
+}
+
+.task.overdue {
+  border-left: 5px solid crimson;
+  background-color: #ffe6e6;
+}
+.due-date {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.task.overdue {
+  border-left: 5px solid red;
+  background-color: #ffe6e6;
+}
+
+.clear-all-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.clear-all-btn:hover {
+  background-color: #a60000;
+  transform: scale(1.03);
+}
+
+.clear-all-btn:active {
+  transform: scale(0.98);
+}
